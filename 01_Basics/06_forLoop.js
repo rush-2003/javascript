@@ -23,3 +23,23 @@ for(let a in obj){
 for(let b of "Rudalph"){
     console.log(b)
 }
+
+
+//PRACTICE 
+const objs = {
+    rudalph:100,
+    shruti:250,
+    alroy:200,
+    nathan:300,
+    shivprassad:300
+}
+
+keys = Object.keys(objs)
+console.log(keys)
+for(let i=0; i<keys.length; i++){
+    console.log("marks of " + keys[i] + " are: " + objs[i])
+}
+
+for(i in objs){
+    console.log("marks of " + i + " are: " + objs[i])
+}

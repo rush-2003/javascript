@@ -1,0 +1,26 @@
+In the DOM (Document Object Model), everything in an HTML document is represented as a "node" — like elements, text, comments, etc.
+👉 nodeType is a property that tells what kind of node it is.
+
+<div>Hello <!-- comment --> World</div>
+
+That <div> contains:
+-An element node (<div>)
+-A text node ("Hello ")
+-A comment node (<!-- comment -->)
+-Another text node (" World")
+JavaScript needs a way to know which kind of node each one is. That's where .nodeType helps.
+
+| Value | Constant Name                 | Description                                            |
+| ----- | ----------------------------- | ------------------------------------------------------ |
+| `1`   | `ELEMENT_NODE`                | An HTML or XML element (e.g., `<div>`)                 |
+| `2`   | `ATTRIBUTE_NODE`              | An attribute of an element (rarely used in modern DOM) |
+| `3`   | `TEXT_NODE`                   | The text content inside an element                     |
+| `4`   | `CDATA_SECTION_NODE`          | CDATA section in XML (not used in HTML)                |
+| `5`   | `ENTITY_REFERENCE_NODE`       | A reference to an entity (obsolete)                    |
+| `6`   | `ENTITY_NODE`                 | An entity declaration (obsolete)                       |
+| `7`   | `PROCESSING_INSTRUCTION_NODE` | Instructions for XML processors                        |
+| `8`   | `COMMENT_NODE`                | A comment (`<!-- comment -->`)                         |
+| `9`   | `DOCUMENT_NODE`               | The entire document (i.e., `document`)                 |
+| `10`  | `DOCUMENT_TYPE_NODE`          | The `<!DOCTYPE>` declaration                           |
+| `11`  | `DOCUMENT_FRAGMENT_NODE`      | A lightweight, minimal document object                 |
+| `12`  | `NOTATION_NODE`               | Notation in DTD (rare and obsolete)                    |
